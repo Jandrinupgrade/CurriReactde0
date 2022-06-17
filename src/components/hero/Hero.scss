@@ -1,0 +1,50 @@
+.linea {
+    border-top: 5px solid white;
+    height: 2px;
+    padding: 0;
+    margin: 20px auto 0 auto;
+    width: 80%;
+  }
+  
+  .hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center
+  }
+  
+  .card {
+    border:white 5px solid;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    border-radius: 13px;
+    background-color: rgba(142, 140, 147, 0.759);
+  }
+  .card:hover {
+    background-color: rgba(157, 154, 164, 0.759);
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.7s;
+            transition-duration: 0.7s;
+    -webkit-transition-timing-function: ease;
+            transition-timing-function: ease;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  img {
+    width: 600px;
+    margin: 20px;
+    border-radius: 20px;
+  }
+  h2 {
+    color:white;
+    text-shadow: 2px 2px rgba(240, 248, 255, 0.241);
+  }
+  h1{
+    color:black;
+    text-shadow: 2px 2px rgba(240, 248, 255, 0.241);
+  }
+  a {
+    color: #0b0089;
+    text-decoration: none;
+  }

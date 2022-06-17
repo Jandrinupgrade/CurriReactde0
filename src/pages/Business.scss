@@ -1,0 +1,75 @@
+.home {
+    background-image: url(../../public/images/ladri2.jpg);
+    //background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cardi {
+    border: white 5px solid;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    border-radius: 13px;
+    background-color:  rgba(157, 154, 164, 0.759);
+  }
+//   .card:hover {
+//     background-color: rgba(157, 154, 164, 0.759);
+//     -webkit-transition-property: all;
+//     transition-property: all;
+//     -webkit-transition-duration: 0.7s;
+//     transition-duration: 0.7s;
+//     -webkit-transition-timing-function: ease;
+//     transition-timing-function: ease;
+//     -webkit-transform: scale(1.1);
+//     transform: scale(1.1);
+  
+  
+//   }
+  .linea {
+    border-top: 2px solid white;
+    height: 2px;
+    padding: 0;
+    margin: 20px auto 0 auto;
+    width: 80%;
+  }
+  .button {
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    text-decoration: none;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    display: inline-block;
+    color: white;
+    background: white;
+    padding: 7px 20px;
+    white-space: nowrap;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 1000px;
+    margin: 10px 5px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  .eduexp {
+    background: #26242446;
+    box-shadow: 0px 5px 0px 0px #131313;
+  }
+  .eduexp:hover {
+    background: #79787b;
+    color:black;
+  }
+  .eduexp:active {
+    box-shadow: 0px 2px 0px 0px #4b4a4c;
+  }
+  .divcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+  }
