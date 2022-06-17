@@ -10,10 +10,10 @@ import Education from "../components/education/Education";
 import Skills from "../components/more/Skills";
 import Languages from "../components/more/Languages";
 import Volunters from "../components/more/Volunters";
-import Business from "../components/business/Business";
+import BusinessShow from "../components/business/BusinessShow";
 
 
-const {hero, education, experience, languages, habilities, volunteer, business } = CV;
+const {hero, education, experience, languages, habilities, volunteer, } = CV;
 
 
 
@@ -39,7 +39,7 @@ const Home = () => {
           })}
       </div>
       </motion.div>
-      <label><h2>Educación/Experiencia:</h2><button className="button eduexp" onClick={() => setEducat(!educat)}><strong>{mostrar}</strong></button></label>
+      <label><h2>Educación/Experiencia:</h2><button className="button " onClick={() => setEducat(!educat)}><strong>{mostrar}</strong></button></label>
       <div className="card">
       {educat ? <Education education={education} /> : <Experience experience={experience}/>}
     
@@ -64,7 +64,7 @@ const Home = () => {
           })}
       </div>
       <div className="card">
-      <Business />
+      <BusinessShow />
       </div>
       <div className="linea"></div>
       <h2>&copy;Alejandro Rodríguez Suárez</h2>

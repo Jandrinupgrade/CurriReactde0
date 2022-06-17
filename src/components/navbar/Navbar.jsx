@@ -1,5 +1,5 @@
 
-import { Link, useNavigate } from 'react-router-dom';
+import { Link,  } from 'react-router-dom';
 import { motion } from "framer-motion";
 //import { useDispatch, useSelector } from 'react-redux';
 //import { logoutUser } from '../redux/auth/auth.actions';
@@ -21,7 +21,7 @@ const Navbar = () => {
     >
       <div className='left'>
         <Link to="/">
-          LOGO
+          <img className="imglog" src="../images/log.jpg" alt="logo jandrin" />
         </Link>
       </div>
       <div className='right'>

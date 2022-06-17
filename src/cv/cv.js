@@ -6,7 +6,7 @@ export const CV = {
       email: "alexrodri13@hotmail.com",
       birthDate: "07/09/1985",
       phone: "942577764 ",
-      image: "../images/logo.jpg",//https://i.imgur.com/ZQAkED3.png",
+      image: "../images/logo.jpg",
       gitHub: "https://github.com/Jandrin",
       aboutMe: [
         {

@@ -29,7 +29,7 @@ const Business = () => {
                 <strong>Descripción: </strong>
                 {bus.description}
               </p>
-              <button onClick={()=> {dispatch(deleteBusiness(bus))}}>Eliminar</button>
+              <button className="button" onClick={()=> {dispatch(deleteBusiness(bus))}}>Eliminar</button>
               <br /> <br /> <br />
             </div>
           );
