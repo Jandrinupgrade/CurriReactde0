@@ -47,6 +47,7 @@ const Games = () => {
           </button>
         )}
       </div>
+      <img className="imgtwo" src="../.././images/candadoopen.jpg" alt="foto candado"/>
     </div>
   );
 };

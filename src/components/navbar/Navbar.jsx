@@ -26,12 +26,16 @@ const Navbar = ({user,dispatch}) => {
         <Link to="/private">Juegos </Link>
         <Link to="/persononalizacion">Personalizame</Link>
      
-      {!user && <Link to="/login">
-        <button className="button">Login</button>
-      </Link>}
-      {user && <Link to= "/">
-      <button className="button" onClick={() => dispatch(saveUser(false))}>Logout</button>
-      </Link>}
+      {!user && <><Link to="/login">
+     <button className="button">Login</button> 
+     </Link>
+       <img className="imglog" src="../.././images/candado.jpg" alt="candado"/>
+       </>}
+      {user && <><Link to= "/">
+      <button className="button" onClick={() => dispatch(saveUser(false))}>Logout</button></Link>
+      <img className="imglog" src="../.././images/candadoopen.jpg" alt="candado"/></>
+     
+      }
       </div>
 
 

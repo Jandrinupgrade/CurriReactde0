@@ -90,13 +90,13 @@ export const CV = {
       name: "Microsoft",
       date: "1967",
       where: "EEUU",
-      description: "Informatica ",
+      description: "microsoft@gmail.com ",
     },
     {
       name: "TicToc",
-      date: "2005 - 2014",
+      date: "2005 ",
       where: "Gran Bretaña",
-      description: "Redes Sociales",
+      description: "tictoc@hotmail.com",
     },
   ],
 };

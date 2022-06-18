@@ -6,4 +6,5 @@ export const es = {
     "place": "Sede",
     "mail": "Correo",
     "add": "Añade Empresa",
+    "title": "Elige idioma para el formulario",
 }

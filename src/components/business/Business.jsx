@@ -1,9 +1,10 @@
 import React from "react";
 import "./Business.scss";
+import { connect } from "react-redux";
 import { useSelector, useDispatch } from "react-redux";
 import { deleteBusiness } from "../../redux/business/business.actions";
 
-const Business = () => {
+const Business = ({user,dispath}) => {
   const { business } = useSelector((state) => state.business);
   const dispatch = useDispatch();
   return (
@@ -18,25 +19,25 @@ const Business = () => {
                 {bus.name}
               </p>
               <p>
-                <strong>Fecha: </strong>
+                <strong>Fecha creacion: </strong>
                 {bus.date}
               </p>
               <p>
-                <strong>Lugar: </strong>
+                <strong>Sede: </strong>
                 {bus.where}
               </p>
               <p>
-                <strong>Descripción: </strong>
+                <strong>Correo electronico: </strong>
                 {bus.description}
               </p>
-              <button
+              {user && <button
                 className="button"
                 onClick={() => {
                   dispatch(deleteBusiness(bus));
                 }}
               >
                 Eliminar
-              </button>
+              </button>}
               <br /> <br /> <br />
             </div>
           );
@@ -44,4 +45,4 @@ const Business = () => {
     </>
   );
 };
-export default Business;
+export default connect(state => ({user: state.auth.user}))(Business);

@@ -6,4 +6,5 @@ export const en = {
     "place": "Place",
     "mail": "Mail",
     "add": "Add Business",
+    "title": "Choose language for the form"
 }

@@ -23,9 +23,10 @@ const Busine = () => {
 
   return (
     <div className="home">
+    <h1 className="h1one">Añade información de empresa para seguirme</h1>
       <div className="cardi">
         <h3>
-          Elige idioma para formulario{" "}
+          {t("title")}{" "}
           <button
             className="button"
             onClick={() => {
