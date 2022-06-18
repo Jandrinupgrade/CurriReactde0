@@ -5,7 +5,7 @@ const Experience = (props) => {
     <>
       <h3>Experiencia</h3>
       {props.experience.length > 0 &&
-        props.experience.map((exp,index) => {
+        props.experience.map((exp, index) => {
           return (
             <div key={index}>
               <p>

@@ -12,67 +12,67 @@ import Languages from "../components/more/Languages";
 import Volunters from "../components/more/Volunters";
 import BusinessShow from "../components/business/BusinessShow";
 
-
-const {hero, education, experience, languages, habilities, volunteer, } = CV;
-
-
+const { hero, education, experience, languages, habilities, volunteer } = CV;
 
 const Home = () => {
   const [educat, setEducat] = useState(false);
   let mostrar = "";
   !educat ? (mostrar = "Educación") : (mostrar = "Experiencia");
   return (
-  <div className="home">
-    
-<Hero hero={hero} />
-<motion.div
+    <div className="home">
+      <Hero hero={hero} />
+      <motion.div
         initial={{ opacity: 0, y: "79px" }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: "50px" }}
-        transition={{ ease: "easeOut", duration: 3}}
+        transition={{ ease: "easeOut", duration: 3 }}
       >
-<div className="card">
-        <h3>Sobre mi</h3>
-        {hero.aboutMe.length > 0 &&
-          hero.aboutMe.map((he,index) => {
-            return <About key={index} {...he} />;
-          })}
-      </div>
+        <div className="card">
+          <h3>Sobre mi</h3>
+          {hero.aboutMe.length > 0 &&
+            hero.aboutMe.map((he, index) => {
+              return <About key={index} {...he} />;
+            })}
+        </div>
       </motion.div>
-      <label><h2>Educación/Experiencia:</h2><button className="button " onClick={() => setEducat(!educat)}><strong>{mostrar}</strong></button></label>
+      <label>
+        <h2>Educación/Experiencia:</h2>
+        <button className="button " onClick={() => setEducat(!educat)}>
+          <strong>{mostrar}</strong>
+        </button>
+      </label>
       <div className="card">
-      {educat ? <Education education={education} /> : <Experience experience={experience}/>}
-    
+        {educat ? (
+          <Education education={education} />
+        ) : (
+          <Experience experience={experience} />
+        )}
       </div>
       <div className="divcontainer">
-      <Languages languages={languages} />
+        <Languages languages={languages} />
 
-      {/* <div className="linea"></div> */}
-      <div className="card">
-        <h3>Habilidades</h3>
-        {habilities.length > 0 &&
-          habilities.map((hab,index) => {
-            return <Skills key={index}  hab={hab} />;
-          })}
-      </div>
+        <div className="card">
+          <h3>Habilidades</h3>
+          {habilities.length > 0 &&
+            habilities.map((hab, index) => {
+              return <Skills key={index} hab={hab} />;
+            })}
+        </div>
       </div>
       <div className="card">
         <h3>Voluntariados</h3>
         {volunteer.length > 0 &&
-          volunteer.map((vo,index) => {
-            return <Volunters key= {index} volun={vo} />;
+          volunteer.map((vo, index) => {
+            return <Volunters key={index} volun={vo} />;
           })}
       </div>
       <div className="card">
-      <BusinessShow />
+        <BusinessShow />
       </div>
       <div className="linea"></div>
       <h2>&copy;Alejandro Rodríguez Suárez</h2>
-
-
-</div>
-    
+    </div>
   );
-}
+};
 
-export default Home
+export default Home;

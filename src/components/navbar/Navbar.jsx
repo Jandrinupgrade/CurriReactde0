@@ -1,20 +1,16 @@
 
 import { Link,  } from 'react-router-dom';
 import { motion } from "framer-motion";
-//import { useDispatch, useSelector } from 'react-redux';
-//import { logoutUser } from '../redux/auth/auth.actions';
+import { connect } from "react-redux";
 import './Navbar.scss';
+import { saveUser } from "../../redux/auth/auth.actions";
 
-const Navbar = () => {
-  //const navigate = useNavigate();
-  //const user = useSelector(state => state.auth.user);
-  //const dispatch = useDispatch();
 
-  //const logoutCallback = () => navigate("/");
+const Navbar = ({user,dispatch}) => {
 
   return (
     <motion.div className="navbar"
-      initial={{ opacity: 0, y: '-79px' }}//Juan Macias
+      initial={{ opacity: 0, y: '-79px' }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: '-50px' }}
       transition={{ ease: "easeOut", duration: 1 }}
@@ -26,26 +22,16 @@ const Navbar = () => {
       </div>
       <div className='right'>
         <Link to="/"  >Inicio</Link>
-
-
-
-
-
-        {/* {!user &&
-          <>
-            <Link to="/register">Registro</Link>
-            <Link to="/login">Iniciar sesión</Link>
-          </>
-        }
-        {user &&
-          <>
-            <Link to="/characters">Personajes</Link>
-            <p>Bienvenido, {user.name}</p>
-            <button onClick={() => dispatch(logoutUser(logoutCallback))}>Logout</button>
-          </>
-        } */}
+        <Link to="/empresas">Sigueme</Link>
+        <Link to="/private">Juegos </Link>
+        <Link to="/persononalizacion">Personalizame</Link>
      
-      <Link to="/empresas">Sigueme</Link>
+      {!user && <Link to="/login">
+        <button className="button">Login</button>
+      </Link>}
+      {user && <Link to= "/">
+      <button className="button" onClick={() => dispatch(saveUser(false))}>Logout</button>
+      </Link>}
       </div>
 
 
@@ -53,4 +39,4 @@ const Navbar = () => {
   )
 };
 
-export default Navbar;
+ export default connect(state => ({user: state.auth.user}))(Navbar);

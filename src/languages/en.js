@@ -5,4 +5,5 @@ export const en = {
     "yearfundation": "Year Fundation",
     "place": "Place",
     "mail": "Mail",
+    "add": "Add Business",
 }

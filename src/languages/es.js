@@ -5,5 +5,5 @@ export const es = {
     "yearfundation": "Año fundación",
     "place": "Sede",
     "mail": "Correo",
-    
+    "add": "Añade Empresa",
 }

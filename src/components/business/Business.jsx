@@ -1,16 +1,16 @@
-import React from 'react'
+import React from "react";
 import "./Business.scss";
-import { useSelector, useDispatch } from 'react-redux';
-import { deleteBusiness } from '../../redux/business/business.actions';
+import { useSelector, useDispatch } from "react-redux";
+import { deleteBusiness } from "../../redux/business/business.actions";
 
 const Business = () => {
-    const {business} = useSelector(state => state.business);
-    const dispatch = useDispatch();
+  const { business } = useSelector((state) => state.business);
+  const dispatch = useDispatch();
   return (
     <>
       <h3>Empresas</h3>
       {business.length > 0 &&
-        business.map((bus,index) => {
+        business.map((bus, index) => {
           return (
             <div key={index}>
               <p>
@@ -29,7 +29,14 @@ const Business = () => {
                 <strong>Descripción: </strong>
                 {bus.description}
               </p>
-              <button className="button" onClick={()=> {dispatch(deleteBusiness(bus))}}>Eliminar</button>
+              <button
+                className="button"
+                onClick={() => {
+                  dispatch(deleteBusiness(bus));
+                }}
+              >
+                Eliminar
+              </button>
               <br /> <br /> <br />
             </div>
           );

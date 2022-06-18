@@ -5,8 +5,7 @@ const About = ( {info} ) => {
   
     return (
    
-    
-      <p>{info} </p>
+   <p>{info} </p>
       
      );
 };

@@ -1,27 +1,26 @@
 .navbar {
-    min-height: 60px;
-    padding: 20px;
-    border: 2px solid black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  min-height: 60px;
+  padding: 20px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: rgb(216, 226, 227);
-    a {
-      margin-left: 24px;
-    }
-  
-    .right {
-      display: flex;
-      align-items: center;
-    }
-  
-    p {
-      margin: 0 24px;
-    }
+  a {
+    margin-left: 24px;
   }
-  .imglog {
-    width: 65px;
-    margin: 20px;
-    border-radius: 20px;
+
+  .right {
+    display: flex;
+    align-items: center;
   }
-  
+
+  p {
+    margin: 0 24px;
+  }
+}
+.imglog {
+  width: 65px;
+  margin: 20px;
+  border-radius: 20px;
+}

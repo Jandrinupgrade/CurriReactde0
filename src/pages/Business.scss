@@ -1,6 +1,5 @@
 .home {
     background-image: url(../../public/images/ladri2.jpg);
-    //background-color: white;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -15,19 +14,7 @@
     border-radius: 13px;
     background-color:  rgba(157, 154, 164, 0.759);
   }
-//   .card:hover {
-//     background-color: rgba(157, 154, 164, 0.759);
-//     -webkit-transition-property: all;
-//     transition-property: all;
-//     -webkit-transition-duration: 0.7s;
-//     transition-duration: 0.7s;
-//     -webkit-transition-timing-function: ease;
-//     transition-timing-function: ease;
-//     -webkit-transform: scale(1.1);
-//     transform: scale(1.1);
-  
-  
-//   }
+
   .linea {
     border-top: 2px solid white;
     height: 2px;
